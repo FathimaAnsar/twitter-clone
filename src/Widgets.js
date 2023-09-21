@@ -16,7 +16,7 @@ function Widgets() {
             What's happening
         </h2>
         <TwitterTweetEmbed tweetId='1703824193861964236'/>
-        <TwitterTimelineEmbed sourceType='profile' screenName='dallitsky' options={{height:400}}/>
+        <TwitterTimelineEmbed sourceType='profile' screenName='sama' options={{height:400}}/>
         <TwitterShareButton options={{text:"#reactjs is awesome", via:'fathimansar'}}/>
 
       </div>
