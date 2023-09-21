@@ -1,5 +1,4 @@
-import React from 'react'
-import shik from './shik.webp'
+import React, {forwardRef} from 'react'
 import { Avatar} from '@mui/material'
 import VerifiedIcon from '@mui/icons-material/Verified';
 import ChatBubbleOutlineIcon from '@mui/icons-material/ChatBubbleOutline';
@@ -8,10 +7,10 @@ import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import ShareIcon from '@mui/icons-material/Share';
 import './Post.css'
 
-function Post({displayName,username,verified,text,image,avatar}) {
+const Post = forwardRef(({displayName,username,verified,text,image,avatar},ref) =>{
 
   return (
-    <div className='post'>
+    <div className='post' ref={ref}>
 
         <div className='post_avatar'>
             <Avatar src={avatar} />
@@ -44,7 +43,7 @@ function Post({displayName,username,verified,text,image,avatar}) {
         </div>
       
     </div>
-  )
-}
+  );
+});
 
 export default Post
